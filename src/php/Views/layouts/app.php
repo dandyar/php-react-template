@@ -11,11 +11,13 @@
         <?php include __DIR__ . "/../{$page}.php"; ?>
     </div>
     
+    <?php if (isset($react) && $react): ?>
     <script>
         // Pass PHP data to JavaScript
         window.appData = <?php echo json_encode($data); ?>;
         window.currentPage = '<?php echo $page; ?>';
     </script>
     <script src="/assets/js/bundle/<?php echo $page; ?>.bundle.js"></script>
+    <?php endif; ?>
 </body>
 </html>
