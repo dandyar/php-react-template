@@ -1,7 +1,15 @@
 <?php
 namespace App\Controllers;
 
+/**
+ * Controller for the contact page.
+ */
 class ContactController {
+    /**
+     * Renders the contact page.
+     * Sets the title, page name, and data for the view.
+     * Enables React for this page.
+     */
     public function index() {
         $title = 'Contact Us';
         $page = 'contact';
