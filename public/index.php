@@ -4,6 +4,7 @@ require_once __DIR__ . '/src/php/Middleware.php';
 require_once __DIR__ . '/src/php/Controllers/HomeController.php';
 require_once __DIR__ . '/src/php/Controllers/AboutController.php';
 require_once __DIR__ . '/src/php/Controllers/ContactController.php';
+require_once __DIR__ . '/src/php/Controllers/PrivacyController.php';
 
 use App\Router;
 use App\Middleware;
@@ -18,6 +19,7 @@ $router->addMiddleware(new Middleware());
 $router->get('/', 'HomeController@index');
 $router->get('/about', 'AboutController@index');
 $router->get('/contact', 'ContactController@index');
+$router->get('/privacy', 'PrivacyController@index');
 
 // Handle the request
 $router->dispatch();

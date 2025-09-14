@@ -9,7 +9,8 @@ class HomeController {
             'welcome_message' => 'Welcome to our PHP + React application!',
             'features' => ['Server-side routing', 'React components', 'Hot reload']
         ];
-        
+        $react = true;
+
         include __DIR__ . '/../Views/layouts/app.php';
     }
 }

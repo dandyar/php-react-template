@@ -10,7 +10,8 @@ class AboutController {
             'description' => 'We build amazing web applications using modern technologies.',
             'team_size' => 10
         ];
-        
+        $react = true;
+
         include __DIR__ . '/../Views/layouts/app.php';
     }
 }

@@ -10,7 +10,8 @@ class ContactController {
             'phone' => '+1 (555) 123-4567',
             'address' => '123 Main St, City, State 12345'
         ];
-        
+        $react = true;
+
         include __DIR__ . '/../Views/layouts/app.php';
     }
 }
